@@ -1,4 +1,4 @@
-# Thmanyah Project – Solution Summary
+# Thmanyah Challenge – Solution Summary
 
 ## Brief Explanation of the Solution
 
