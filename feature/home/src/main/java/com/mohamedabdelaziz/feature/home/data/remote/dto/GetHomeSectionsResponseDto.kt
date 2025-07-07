@@ -1,142 +1,142 @@
 package com.mohamedabdelaziz.feature.home.data.remote.dto
 
-import com.google.gson.annotations.SerializedName
+import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
 internal data class GetHomeSectionsResponseDto(
-    @SerializedName("pagination")
+    @SerialName("pagination")
     val pagination: PaginationDto? = null,
-    @SerializedName("sections")
+    @SerialName("sections")
     val sections: List<HomeSectionDto?>? = null
 )
 @Serializable
 internal data class HomeContentDto(
     // ======= Shared Fields =======
-    @SerializedName("name")
+    @SerialName("name")
     val name: String? = null,
 
-    @SerializedName("author_name")
+    @SerialName("author_name")
     val authorName: String? = null,
 
-    @SerializedName("description")
+    @SerialName("description")
     val description: String? = null,
 
-    @SerializedName("avatar_url")
+    @SerialName("avatar_url")
     val avatarUrl: String? = null,
 
-    @SerializedName("duration")
+    @SerialName("duration")
     val duration: Long? = null,
 
-    @SerializedName("language")
+    @SerialName("language")
     val language: String? = null,
 
-    @SerializedName("release_date")
+    @SerialName("release_date")
     val releaseDate: String? = null,
 
-    @SerializedName("score")
+    @SerialName("score")
     val score: Double? = null,
 
     // ======= Article-specific =======
-    @SerializedName("article_id")
+    @SerialName("article_id")
     val articleId: String? = null,
 
     // ======= Audiobook-specific =======
-    @SerializedName("audiobook_id")
+    @SerialName("audiobook_id")
     val audiobookId: String? = null,
 
     // ======= Podcast Episode-specific =======
-    @SerializedName("episode_id")
+    @SerialName("episode_id")
     val episodeId: String? = null,
 
-    @SerializedName("episode_type")
+    @SerialName("episode_type")
     val episodeType: String? = null,
 
-    @SerializedName("season_number")
+    @SerialName("season_number")
     val seasonNumber: Int? = null,
 
-    @SerializedName("number")
+    @SerialName("number")
     val number: Int? = null,
 
-    @SerializedName("audio_url")
+    @SerialName("audio_url")
     val audioUrl: String? = null,
 
-    @SerializedName("separated_audio_url")
+    @SerialName("separated_audio_url")
     val separatedAudioUrl: String? = null,
 
-    @SerializedName("chapters")
+    @SerialName("chapters")
     val chapters: List<String?>? = null,
 
     // ======= Podcast Show-specific =======
-    @SerializedName("podcast_id")
+    @SerialName("podcast_id")
     val podcastId: String? = null,
 
-    @SerializedName("podcast_name")
+    @SerialName("podcast_name")
     val podcastName: String? = null,
 
-    @SerializedName("podcastPopularityScore")
+    @SerialName("podcastPopularityScore")
     val podcastPopularityScore: Int? = null,
 
-    @SerializedName("podcastPriority")
+    @SerialName("podcastPriority")
     val podcastPriority: Int? = null,
 
-    @SerializedName("episode_count")
+    @SerialName("episode_count")
     val episodeCount: Int? = null,
 
-    @SerializedName("popularityScore")
+    @SerialName("popularityScore")
     val popularityScore: Int? = null,
 
-    @SerializedName("priority")
+    @SerialName("priority")
     val priority: Int? = null,
 
     // ======= Paid/Early Access =======
-    @SerializedName("paid_is_early_access")
+    @SerialName("paid_is_early_access")
     val paidIsEarlyAccess: Boolean? = null,
 
-    @SerializedName("paid_is_now_early_access")
+    @SerialName("paid_is_now_early_access")
     val paidIsNowEarlyAccess: Boolean? = null,
 
-    @SerializedName("paid_is_exclusive")
+    @SerialName("paid_is_exclusive")
     val paidIsExclusive: Boolean? = null,
 
-    @SerializedName("paid_is_exclusive_partially")
+    @SerialName("paid_is_exclusive_partially")
     val paidIsExclusivePartially: Boolean? = null,
 
-    @SerializedName("paid_exclusive_start_time")
+    @SerialName("paid_exclusive_start_time")
     val paidExclusiveStartTime: Int? = null,
 
-    @SerializedName("paid_exclusivity_type")
+    @SerialName("paid_exclusivity_type")
     val paidExclusivityType: String? = null,
 
-    @SerializedName("paid_early_access_date")
+    @SerialName("paid_early_access_date")
     val paidEarlyAccessDate: String? = null,
 
-    @SerializedName("paid_early_access_audio_url")
+    @SerialName("paid_early_access_audio_url")
     val paidEarlyAccessAudioUrl: String? = null,
 
-    @SerializedName("paid_transcript_url")
+    @SerialName("paid_transcript_url")
     val paidTranscriptUrl: String? = null,
 
-    @SerializedName("free_transcript_url")
+    @SerialName("free_transcript_url")
     val freeTranscriptUrl: String? = null
 )
 @Serializable
 internal data class HomeSectionDto(
-    @SerializedName("content")
+    @SerialName("content")
     val content: List<HomeContentDto?>? = null,
-    @SerializedName("content_type")
+    @SerialName("content_type")
     val contentType: String? = null,
-    @SerializedName("name")
+    @SerialName("name")
     val name: String? = null,
-    @SerializedName("order")
+    @SerialName("order")
     val order: Int? = null,
-    @SerializedName("type")
+    @SerialName("type")
     val type: String? = null
 )
 @Serializable
 internal data class PaginationDto(
-    @SerializedName("next_page")
+    @SerialName("next_page")
     val nextPage: String? = null,
-    @SerializedName("total_pages")
+    @SerialName("total_pages")
     val totalPages: Int? = null
 )
